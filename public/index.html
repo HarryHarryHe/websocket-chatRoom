@@ -130,7 +130,8 @@
     <video src="sound/receiveMsg.mp3" id="receive-sound" style="display: none"></video>
     <video src="sound/comeIn.mp3" id="comeIn-sound" style="display: none"></video>
     <!-- 引入socketio -->
-    <script src="/socket.io/socket.io.js"></script>
+    <!--注意这里的地址localhost写对应你服务器的地址，因为访问的是你服务器的nodejs服务器!!!!!-->
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
     <script src="js/jquery-1.12.4.js"></script>
     <script src="lib/jquery-mCustomScrollbar/script/jquery.mCustomScrollbar.min.js"></script>
     <script src="lib/jquery-emoji/js/jquery.emoji.min.js"></script>

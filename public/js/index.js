@@ -4,7 +4,7 @@
 /*
   1. 连接socketio服务
 */
-var socket = io('http://localhost:3000');
+var socket = io('http://127.0.0.1:3000');
 var username, avatar;
 var sound = $('#receive-sound')[0];
 var comeInsound = $('#comeIn-sound')[0];
