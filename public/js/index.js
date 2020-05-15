@@ -113,6 +113,23 @@ $('.btn-send').on('click', () => {
     username: username,
     avatar: avatar
   })
+});
+//回车发送消息
+$('#content').bind('keypress',(event)=>{
+  //监听回车-13
+  if (event.keyCode=="13"){
+    event.preventDefault();
+    var content = $('#content').html();
+    $('#content').html('');
+    if (!content) return alert('请输入内容');
+
+    // 发送给服务器
+    socket.emit('sendMessage', {
+      msg: content,
+      username: username,
+      avatar: avatar
+    })
+  }
 })
 
 // 监听聊天的消息

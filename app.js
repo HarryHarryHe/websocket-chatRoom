@@ -1,7 +1,7 @@
 /*
   启动聊天的服务端程序
 */
-var app = require('express')()
+var app = require('express')();
 var server = require('http').Server(app)
 var io = require('socket.io')(server)
 // 记录所有已经登录过的用户
